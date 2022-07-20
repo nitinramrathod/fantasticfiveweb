@@ -1,0 +1,607 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    height: auto;
+}
+
+
+ /* Navigation start from here  */
+ .container nav{
+    position: fixed;
+
+    width: 100%;
+    min-width: 850px;
+    height: 70px;
+    background-color: rgba(45, 93, 155, 0.973);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container nav h1{
+    color: aqua;
+    font-size: 30px;
+    text-shadow: 3px 3px 0 rgb(6, 8, 73);
+}
+.container nav ul{
+    display: flex;
+    
+}
+.container nav ul li{
+    list-style: none;
+    margin: 10px;
+
+}
+.container nav ul li a{
+    transition: all .3s ease-in;
+    font-size: 15px;
+    
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    padding-bottom: 7px;
+    
+}
+.container nav ul li a span{
+    font-size: 17px;
+}
+.container ul li .active{
+    color: rgb(96, 255, 247);
+    border-bottom: 2px solid rgb(96, 255, 247);
+}
+.container nav ul li a:hover{
+    color: rgb(96, 255, 247);
+    border-bottom: 2px solid rgb(96, 255, 247);
+}
+.container nav button{
+    display: flex;
+    align-items: center;
+    transition: all .3s ease-in;
+    background-color: rgb(88, 214, 136);
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    color: aliceblue;
+    text-align: center;
+    border: none;
+    border: 3px solid rgb(88, 214, 136);;
+    
+}
+.container nav button span{
+    font-size: 20px;
+}
+.container nav button:hover{
+    color: rgb(88, 214, 136); 
+    background-color: aliceblue;
+
+}
+
+/* starting of header  */
+.blank{
+    height: 70px;
+    width: 100%;
+}
+header{    
+    width: 100%;
+    min-width: 850px;
+    height: 90vh;
+    background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.644)), url("back1.jpg");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;  
+    animation: header-back 30s ease-in-out infinite; 
+    /* background-blend-mode: difference; */
+
+}
+
+@keyframes header-back {
+    0%{
+        background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.822)), url("back1.jpg"); 
+    }
+    14.2%{
+        background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.822)), url("back2.jpg"); 
+    }
+    28.4%{
+        background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.822)), url("back3.jpg"); 
+    }
+    42.6%{
+        background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.822)), url("back4.jpg"); 
+    }
+    56.8%{
+        background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.822)), url("back5.jpg"); 
+    }
+    71%{
+        background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.822)), url("back6.jpg"); 
+    }
+    85.2%{
+        background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.822)), url("back7.jpg"); 
+    }
+    85.2%{
+        background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.822)), url("back8.jpg"); 
+    }
+    100%{
+        background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.822)), url("back9.jpg"); 
+    }
+
+    
+}
+
+
+
+header .upper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+    /* background-color: aquamarine; */
+
+}
+header .upper .heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    /* background-color: blue; */
+}
+header .upper .heading .heading-box{
+    text-align: center;
+    margin-top: 80px;
+
+    width: 70%;
+    height: auto;
+    /* background: red; */
+}
+header .upper .heading .heading-box h3{
+    text-align: left;
+    margin-bottom: -20px;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: rgb(240, 240, 240);
+}
+header .upper .heading .heading-box h1{
+    text-transform: uppercase;
+    margin: 20px;
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(45deg, rgb(90, 176, 216),rgb(236, 73, 241),rgb(8, 247, 127),rgb(250, 153, 26));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    animation: headline 5s ease infinite alternate;
+
+    /* color: antiquewhite;
+    text-shadow: 4px 4px rgb(88, 85, 85); */
+}
+
+
+@keyframes headline {
+    from{
+        background-position: left;
+    }
+    to{
+        background-position: right;
+    }
+    
+}
+
+
+header .upper .heading .heading-box p{
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 0 0 4px black; */
+    letter-spacing: 1px;
+    margin: 20px;
+    word-spacing: 2px;
+    font-size: 17px;
+    
+}
+
+
+
+
+
+
+.upper .photo-box{
+    /* background-color: blue; */
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+
+
+@media screen and (max-width:800px){
+  
+    .upper .photo-box{
+        display: none;
+    
+    }
+    header .upper .heading{
+       
+        width: 100%;
+       
+    }
+    header .upper .heading .heading-box h3{
+       
+        font-size: 50px;
+       
+    }
+    header .upper .heading .heading-box h1{
+       
+        font-size: 100px;
+       
+    }
+
+   
+.container nav{
+    justify-content: space-around;
+}    
+.container nav h1{
+    color: aqua;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0 rgb(6, 8, 73);
+}
+.container nav ul{
+    display: none;
+
+    
+}
+.container nav ul li{
+    list-style: none;
+    margin: 5px;
+
+}
+.container nav ul li a{
+    transition: all .3s ease-in;
+    font-size: 10px;
+    
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    padding-bottom: 7px;
+    
+}
+.container nav ul li a span{
+    font-size: 10px;
+}
+.container ul li .active{
+    color: rgb(96, 255, 247);
+    border-bottom: 2px solid rgb(96, 255, 247);
+}
+.container nav ul li a:hover{
+    color: rgb(96, 255, 247);
+    border-bottom: 2px solid rgb(96, 255, 247);
+}
+.container nav button{
+    display: flex;
+    align-items: center;
+    transition: all .3s ease-in;
+    background-color: rgb(88, 214, 136);
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    color: aliceblue;
+    text-align: center;
+    border: none;
+    border: 3px solid rgb(88, 214, 136);;
+    
+}
+.container nav button span{
+    font-size: 20px;
+}
+.container nav button:hover{
+    color: rgb(88, 214, 136); 
+    background-color: aliceblue;
+
+}
+    
+}
+.upper .photo-box .photo{
+    background-color: rgb(94, 94, 209);
+    width: 60%;
+    height: 60%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 80px;
+    background-image: url(photo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.lower {
+    width: 100%;
+    height: auto;
+}
+.lower .lower-box {
+    text-align: center;
+    margin-top: 50px;
+
+}
+.lower .lower-box h2 {
+   color: beige;
+   letter-spacing: 2px;
+   font-weight: 300;
+
+}
+.lower .lower-box .s-btn{
+    margin-top: 15px;
+}
+.lower .lower-box .s-btn a{
+    margin: 5px;
+    text-decoration: none;
+    padding: 7px 10px;
+    background-color: rgb(63, 91, 216);
+    color: antiquewhite;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.lower .lower-box .s-btn a:nth-child(1):hover{
+    background: linear-gradient(45deg, purple, red, orange,blue);
+    background-size: 200%;
+
+}
+.lower .lower-box .s-btn a:nth-child(2):hover{
+    background: linear-gradient(45deg, rgb(36, 19, 129),rgb(61, 61, 241));
+    background-size: 200%;
+    
+}
+.lower .lower-box .s-btn a:nth-child(3):hover{
+    background: linear-gradient(45deg, rgb(111, 111, 245),rgb(107, 230, 209));
+    background-size: 200%;
+    
+}
+.lower .lower-box .s-btn a:nth-child(4):hover{
+    background: linear-gradient(45deg, rgb(119, 6, 6), red);
+    background-size: 200%;
+    
+}
+.lower .lower-box .s-btn a:nth-child(5):hover{
+    background: linear-gradient(45deg, rgb(84, 139, 84), rgb(22, 224, 22));
+    background-size: 200%;
+    
+}
+.lower .lower-box .s-btn a:nth-child(6):hover{
+    background: linear-gradient(45deg, rgb(247, 130, 20), blue);
+    background-size: 200%;
+    
+}
+
+
+
+/* section first start from here  */
+.container .first{
+
+    min-height: 80vh;
+    height: auto;
+    width: 100%;
+}
+
+
+.container .first .main-box{
+    text-align: center;
+    min-width: 850px;
+    width: 100%;
+}
+
+.container .first .main-box .heading-about h1{
+    text-transform: uppercase;
+    margin: 20px;
+}
+.container .first .main-box .card-container{
+    width: 100%;
+    min-width: 850px;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.container .first .main-box .card-container .card-box{
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    background-color: rgb(99, 112, 136);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .first .main-box .card-container .card-box .photo{
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    background-color: rgb(115, 238, 131);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    padding: 5px;
+}
+.container .first .main-box .card-container .card-box .photo img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+.container .first .main-box .card-container .card-box .card-about{
+    width: 100%;
+    margin-top: 20px;
+    /* background-color: blueviolet; */
+}
+.container .first .main-box .card-container .card-box .card-about a{
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration:none;
+    text-transform: uppercase;
+}
+.container .first .main-box .card-container .card-box .card-about p{
+    margin-top: 5px;
+    font-size: 25px;
+    color: rgb(157, 199, 236);
+    
+}
+
+.container .first .main-box .card-container .card-box .card-about p:last-child{
+    margin-top: 5px;
+    font-size: 16px;
+    color: rgb(174, 243, 191);
+    text-transform: capitalize;
+    
+}
+
+.container .first .main-box .card-container .card-box .handler{
+    /* background-color: blue; */
+    margin-top: 10px;
+}
+.container .first .main-box .card-container .card-box .handler a{
+    text-decoration: none;
+    color: rgb(76, 248, 42);
+    font-size: 20px;
+    margin: 5px;
+}
+
+.container .first .main-box .card-container .card-box .handler a:hover{
+    color: rgb(253, 119, 220); 
+}
+
+
+
+
+
+/* Gallery Start from here  */
+.container .second{
+    width: 100%;
+    min-width: 850px;
+    height: auto;
+    margin-top: 20px;
+}
+.container .second h1{
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.container .second .photos-gallery{
+    padding: 10px;
+    background: linear-gradient(45deg, rgb(250, 125, 239),rgb(133, 133, 245), rgb(46, 231, 200));
+    background-size: 450%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    animation: second-back 10s ease infinite alternate;
+}
+
+@keyframes second-back {
+    from{
+        background-position: left;
+    }
+    from{
+        background-position: right;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.container .second .photos-gallery .g-photo{
+    background-color: rgba(248, 248, 248, 0.459);
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border: 5px solid rgb(111, 236, 128);
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+.container .second .photos-gallery .g-photo img{
+    
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.container footer{
+    
+    height: 100px;
+    background-color: rgb(17, 40, 71);
+    width: 100%;
+    min-width: 850px;
+    display: grid;
+    place-items: center;
+}
+.container footer p{
+    color: aliceblue;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
